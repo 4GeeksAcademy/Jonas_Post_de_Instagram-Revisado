@@ -25,33 +25,33 @@ body {
     justify-items: center;
 }
 
-    .profile-picture {
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        object-fit: cover; 
-        margin-left: 10px;
-        display: flex;
-    }
+.profile-picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-left: 10px;
+    display: flex;
+}
 
-    .user {
-        margin-left: 5px;
-        font-size: 14px;
-    }
+.user-bar {
+    margin-left: 5px;
+    font-size: 14px;
+}
 
-    .name {
-        font-size: 13px;
-    }
+.name {
+    font-size: 13px;
+}
 
-    .settings {
-        font-size: 30px;
-        margin-left: auto;
-        margin-right: 15px;
-    }
+.settings {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: 15px;
+}
 
-    .settings:hover {
-        color: rgb(165, 25, 25);
-    }
+.settings:hover {
+    color: rgb(165, 25, 25);
+}
 
 .photo {
     position: relative;
@@ -76,8 +76,8 @@ body {
 
 .image-button:active {
     box-shadow: 
-    0 -10px 15px -10px rgba(0, 0, 0, 0.7), /* Sombra superior */
-    0 10px 15px -10px rgba(0, 0, 0, 0.7);  /* Sombra inferior */
+    0 -10px 10px -10px rgba(0, 0, 0, 0.7), /* Sombra superior */
+    0 10px 10px -10px rgba(0, 0, 0, 0.7);  /* Sombra inferior */
 }
 
 .heart-back-icon {
@@ -97,7 +97,7 @@ body {
     opacity: 0.5; /* Aparece con transparencia */
 }
 
-.iconsbar {
+.icons-bar {
     width:100%;
     height: 8%;
     display: inline-flex;
@@ -105,109 +105,109 @@ body {
     align-items: center;
 }
 
-    .like {
-        position: relative;
-        margin-left: 10px;
-        font-size: 30px;
-        display: inline-block;
-        cursor: pointer;
-    }
+.like {
+    position: relative;
+    margin-left: 10px;
+    font-size: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
 
-    .like-button {
-        padding: 0px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        font-size: 30px;
-        transition: color 0.3s ease;
-    }
+.like-button {
+    padding: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
 
 /* Ícono de fondo para el botón "like" */
-    .like-back-icon {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 30px;
-        opacity: 0;
-        transition: opacity 0.1s ease;
-        pointer-events: none;
-        cursor: none;
-    }
+.like-back-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    pointer-events: none;
+    cursor: none;
+}
 
-   /* Ícono de fondo visible en color sólido */
-    .like-back-icon.show {
-    opacity: 1; /* Totalmente opaco */
-    color: rgb(165, 25, 25); /* Rojo sólido */
+/* Ícono de fondo visible en color sólido */
+.like-back-icon.show {
+opacity: 1; /* Totalmente opaco */
+color: rgb(165, 25, 25); /* Rojo sólido */
 }
 
 
-    .like-button .fa-heart {
-        transition: color 0.3s ease;
-    }
+.like-button .fa-heart {
+    transition: color 0.3s ease;
+}
 
-    .like-button:hover .fa-heart {
-        color: rgb(165, 25, 25);
-    }
+.like-button:hover .fa-heart {
+    color: rgb(165, 25, 25);
+}
 
-    .comment{
-        font-size: 30px;
-        margin-left: 7px;
-    }
+.comment{
+    font-size: 30px;
+    margin-left: 7px;
+}
 
-    .comment-button {
-        padding: 0px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        font-size: 30px;
-        transition: color 0.3s ease;
-    }
+.comment-button {
+    padding: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
 
-    .comment-button:hover .fa-comment {
-        color: rgb(165, 25, 25);
-    }
+.comment-button:hover .fa-comment {
+    color: rgb(165, 25, 25);
+}
 
-    .sharewith {
-        font-size: 30px;
-        margin-left: 7px;
-    }
+.share-with {
+    font-size: 30px;
+    margin-left: 7px;
+}
 
-    .sharewith button {
-        padding: 0px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        font-size: 30px;
-        transition: color 0.3s ea
-    }
+.share-with button {
+    padding: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 30px;
+    transition: color 0.3s ea
+}
 
-    .sharewith-button:hover .fa-paper-plane {
-        color: rgb(165, 25, 25);
-    }
+.share-with-button:hover .fa-paper-plane {
+    color: rgb(165, 25, 25);
+}
 
-    .keep {
-        font-size: 30px;
-        margin-left: auto;
-        margin-right: 15px;
-    }
+.keep {
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: 15px;
+}
 
-    .keep button {
-        padding: 0px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        font-size: 30px;
-        transition: color 0.3s ea
-    }
+.keep button {
+    padding: 0px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 30px;
+    transition: color 0.3s ea
+}
 
-    .keep-button:hover .fa-bookmark {
-        color:rgb(165, 25, 25);
-    }
+.keep-button:hover .fa-bookmark {
+    color:rgb(165, 25, 25);
+}
 
 .feedback {
     height: 3%;
